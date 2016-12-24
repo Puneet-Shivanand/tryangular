@@ -5,8 +5,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>TryAngular</title>
-	<!--<script src="./js/angular.min.js"></script>-->
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.10/angular.min.js"></script>
+	<script src="./js/angular.min.js"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.10/angular.min.js"></script> -->
 
 	<script src="./js/app/app.module.js"></script>
 	<script src="./js/app/app.config.js"></script>
@@ -27,15 +27,21 @@
 	</style>
   </head>
   <body>
-  	<h1 class='new-class' ng-class="{'other-class':name=='Puneet','new-class2':font==120}">
+  <!-- 	<h1 class='new-class' ng-class="{'other-class':name=='Puneet','new-class2':font==120}">
   	Hello, 
   		<span ng-if='name'>{{ name }}</span>
   		<span ng-if='!name'>World</span>!
   	</h1>
-  	<input type="text" ng-model="name"/>
+  	<input type="text" ng-model="name"/> 
   	<input type="text" ng-model="font" placeholder="font" />
+	-->
+<!-- controller code
+  	<div class='' ng-controller='BlogListController'>
+		<h1 class="new-class">{{ title }}</h1>
+		<button ng-click="Test()">Click me!</button>
+  	</div> -->
 
-
-  	<div class='' ng-controller='BlogListController'></div>
+  	<!-- custom directive -->
+  	<blog-list></blog-list>
   </body>
 </html>
