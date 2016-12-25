@@ -19,7 +19,8 @@ angular.module('blogList').
 	component('blogList',{
 		// template:'<div ><h1 class="new-class">{{ title }}</h1><button ng-click="Test()">Click me!</button></div>',
 		templateUrl:'/templates/blog-list.html',
-		controller:function($scope){
+		controller:function($routeParams, $scope){
+			console.log($routeParams.id)
 			var Items = [
 			{title:"Some title", id:1, desc:"This is a Book"},
 				{title:"No title", id:2, desc:"This to is a Book"},
@@ -29,7 +30,6 @@ angular.module('blogList').
 
 			$scope.items=Items
 
-			console.log("hello")
 	 		$scope.title = 'Hi there'
 			$scope.clicks=0
 			$scope.Test = function(){
